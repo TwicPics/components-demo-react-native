@@ -28,7 +28,7 @@ TwicPics Components is a __collection of components__ that make it dead easy to 
 <TwicImg src="football.jpg" />
 ```
 
-`<TwicVideo>` is a component for seamless playback of [videos optimized with TwicPics](https://www.twicpics.com/docs/topics/video-optimization).
+`<TwicVideo>` is a component for seamless playback of [videos optimized with TwicPics](https://www.twicpics.com/docs/guides/video-optimization).
 
 ```html
 <TwicVideo src="path/to/your/video"/>
