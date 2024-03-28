@@ -15,7 +15,7 @@ const assets = [
 
 const LazyLoading = () => (
 <ScrollView>
-      <View style={styles.container}>
+      <View>
         { assets.map( ( asset, i ) => (
           <View key={ i }>
             { asset.video ? 
@@ -62,7 +62,6 @@ const LazyLoading = () => (
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

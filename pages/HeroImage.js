@@ -1,4 +1,4 @@
-import {StyleSheet, View } from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
 import { TwicImg } from '@twicpics/components/react-native';
 
 const HeroImage = () => {
@@ -18,6 +18,7 @@ const HeroImage = () => {
 const styles = StyleSheet.create( {
     "container": {
         "width": '100%',
+        "height": '100%'
     },
 } );
 
