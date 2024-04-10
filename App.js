@@ -22,6 +22,7 @@ import VideoSlicing from './pages/VideoSlicing.js';
 
 installTwicPics({
   "domain": `https://demo.twic.pics/`,
+  "cachePolicy" : `memory`,
   "debug": true,
 });
 
