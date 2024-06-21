@@ -1,7 +1,7 @@
 import { SafeAreaView, StatusBar, View, FlatList, StyleSheet } from 'react-native';
 import { TwicImg } from '@twicpics/components/react-native';
 
-const images = [
+const seed = [
   `angel-fish.jpg`,
   `clown-fish.jpg`,
   `coral-reef.jpg`,
@@ -13,6 +13,9 @@ const images = [
   `tiger-fish.jpg`,
 ];
 
+const images = [ ...seed, ...seed, ...seed, ...seed, ...seed, ...seed];
+
+
 const renderItem = ( { item } ) => (
     <View style={ { "padding": 10 } } >
         <TwicImg src={ item } eager refit="5p"/>
@@ -21,7 +24,7 @@ const renderItem = ( { item } ) => (
 
 const List = () => (
     <SafeAreaView style={styles.container}>
-        <FlatList data={images} renderItem={renderItem} keyExtractor={item => item.id}/>
+        <FlatList data={images} renderItem={renderItem} keyExtractor={_ => Math.floor( Math.random() * 1000000 )}/>
     </SafeAreaView>
 );
 const styles = StyleSheet.create( {

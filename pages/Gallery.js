@@ -13,7 +13,7 @@ const seed = [
   `sea-turtle.jpg`,
   `tiger-fish.jpg`,
 ];
-const images = [ ...seed, ...seed, ...seed, ...seed, ...seed, ...seed ];
+const images = [ ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed ];
 
 class Gallery extends Component {
     render() {
